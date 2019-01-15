@@ -1,6 +1,6 @@
 # FunSPICE
 
-FunSPICE is a Python based linear symbolic SPICE style circuit solver, producing equation based results rather than numeric ones like a typical SPICE simulator. Element parameters can be set to single variables, expressions of multiple variables, complex numbers, and real constants. Say goodbye to doing lengthy FUNdamental circuit analysis by hand, because FunSPICE will do it for you! FunSPICE only solves linear circuits, thus circuits such as rectifiers, peak detectors, sample-hold, multipliers, translinear loops, square root, etc won't solve properly as linear circuit analysis methods don't always apply. All the FunSPICE code is licensed under BSD and is free as in free beer, see the license for more information. 
+FunSPICE is a Python based linear symbolic SPICE style circuit solver, producing equation based results rather than numeric ones like a typical SPICE simulator. Element parameters can be set to single variables, expressions of multiple variables, complex numbers, and real constants. Say goodbye to doing lengthy FUNdamental circuit analysis by hand, because FunSPICE will do it for you! FunSPICE only solves linear circuits, thus non-linear circuits such as rectifiers, peak detectors, sample-hold, multipliers, translinear loops, square root, etc won't solve properly as linear circuit analysis methods don't always apply. All the FunSPICE code is licensed under BSD and is free as in free beer, see the license for more information. 
 
 ### Supported Elements
 - Voltage Source (V)
