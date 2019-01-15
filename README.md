@@ -50,7 +50,7 @@ See https://docs.anaconda.com/anaconda/install/ to install Anaconda
 
 ### Usage
 
-Once Anaconda is installed, see the FunSPICE Summary to get started.
+Once Anaconda is installed, launch Jupyter Notebook and open the FunSPICE Summary to get started.
 
 FunSPICE Element Documentation notebook provides documentation for all the supported elements in FunSPICE
 
@@ -73,20 +73,21 @@ funspice.print_results()
 <Add your own results access statements and math operations here>
 ```
 Here is a short list of element templates, see the included notebooks for more details on usage:
-- {'type':'V', 'k':k, 'j':j, 'val':'V'}
-- {'type':'I', 'k':k, 'j':j, 'val':'Is'}
-- {'type':'R', 'k':k, 'j':j, 'val':'R'}
-- {'type':'L', 'k':k, 'j':j, 'val':'L'}
-- {'type':'C', 'k':k, 'j':j, 'val':'C'}
-- {'type':'E', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'A_v'}
-- {'type':'G', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'G'}
-- {'type':'F', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'A_i'}
-- {'type':'H', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'Z'}
-- {'type':'X', 'p1':p1, 'n1':n1,' p2':p2, 'n2':n2, 'val':'n'}
-- {'type':'M', 'd':0, 'g':1, 's':2, 'ro':'ro', 'gm':'gm', 'cgs':'cgs', 'cgd':'cgd'}
-- {'type':'B', 'c':0, 'b':1, 'e':2, 'ro':'ro', 'beta':'beta', 'gm':'gm', 'cbe':'cbe', 'cbc':'cbc'}
-- {'type':'O', 'p':p, 'n':n, 'o':o,'val':'A_v'}
-
+```
+{'type':'V', 'k':k, 'j':j, 'val':'V'}
+{'type':'I', 'k':k, 'j':j, 'val':'Is'}
+{'type':'R', 'k':k, 'j':j, 'val':'R'}
+{'type':'L', 'k':k, 'j':j, 'val':'L'}
+{'type':'C', 'k':k, 'j':j, 'val':'C'}
+{'type':'E', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'A_v'}
+{'type':'G', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'G'}
+{'type':'F', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'A_i'}
+{'type':'H', 'k':k, 'j':j, 'p':p, 'q':q, 'val':'Z'}
+{'type':'X', 'p1':p1, 'n1':n1,' p2':p2, 'n2':n2, 'val':'n'}
+{'type':'M', 'd':0, 'g':1, 's':2, 'ro':'ro', 'gm':'gm', 'cgs':'cgs', 'cgd':'cgd'}
+{'type':'B', 'c':0, 'b':1, 'e':2, 'ro':'ro', 'beta':'beta', 'gm':'gm', 'cbe':'cbe', 'cbc':'cbc'}
+{'type':'O', 'p':p, 'n':n, 'o':o,'val':'A_v'}
+```
 ### How It Works
 FunSPICE reads and parses the user created array of element dictionaries (passed into FunSPICE constructor), which is the netlist for the circuit. The element node indices and values are used to build the main circuit matrix. FunSPICE uses a MNA (Modified Nodal Analysis) matrix stamping algorithm to build the circuit matrix up, then puts the final matrix into row reduced form where the final results are accessed. 
 
