@@ -50,11 +50,11 @@ See https://docs.anaconda.com/anaconda/install/ to install Anaconda
 
 ### Usage
 
-Once Anaconda is installed, launch Jupyter Notebook and open the FunSPICE Summary to get started.
+Once Anaconda is installed, launch Jupyter Notebook and open the FunSPICE Summary.ipynb to get started.
 
-FunSPICE Element Documentation notebook provides documentation for all the supported elements in FunSPICE
+FunSPICE Element Documentation.ipynb notebook provides documentation for all the supported elements in FunSPICE
 
-FunSPICE Analysis Template notebook can be copied and modified to perform your own circuit analysis.
+FunSPICE Analysis Template.ipynb notebook can be copied and modified to perform your own circuit analysis.
 
 FunSPICE can be used with regular python scripts as well, Jupyter is not required, however it makes visualization easier in my opinion.
 
